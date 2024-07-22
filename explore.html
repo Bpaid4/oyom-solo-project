@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <link rel="shortcut icon" href="./assets/about/desktop/vehiclelogo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        .container-fluid{
+            background-color: rgb(240, 216, 186);
+        }
+        .bg-image-vertical {
+position: relative;
+overflow: hidden;
+background-repeat: no-repeat;
+background-position: right center;
+background-size: auto 100%;
+}
+
+@media (min-width: 1025px) {
+.h-custom-2 {
+height: 100%;
+}
+}
+
+.signin{
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-color: #000;
+}
+
+.signin:hover{
+  background-color:#f6f6f6;
+  color: #000;
+  border-color: #000;
+}
+
+.signins{
+  margin-left: 2.5rem;
+}
+
+/* .register{
+    align-items: center
+} */
+
+.horizontal-line {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: 3.3rem;
+  }
+  
+  .horizontal-line::before,
+  .horizontal-line::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+  }
+
+    </style>
+
+
+</head>
+<body>
+
+<section class="vh-100">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 text-black">
+  
+          <div class="px-5 ms-xl-4">
+            <i class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" style="color: #709085;"></i>
+            <span class="h1 fw-bold mb-0"><img src="./assets/about/desktop/vehiclelogo.jpeg"
+                alt="Login image" class="w-70 h-56" style="object-position: left;"></span>
+          </div>
+  
+          <div class="d-flex align-items-center h-custom-12 px-3 ms-xl-4 mt-3 pt-5 pt-xl-0 mt-xl-n5">
+  
+            <form style="width: 30rem;">
+  
+              <h3 class="fw-normal mb-1 pb-1" style="letter-spacing: 1px;">Log in</h3>
+  
+              <div data-mdb-input-init class="form-outline mb-3">
+                <input type="email" id="form2Example18" class="form-control form-control-lg" />
+                <label class="form-label" for="form2Example18">Email or Username</label>
+              </div>
+  
+              <div data-mdb-input-init class="form-outline mb-3">
+                <input type="password" id="form2Example28" class="form-control form-control-lg" />
+                <label class="form-label" for="form2Example28">Password</label>
+              </div>
+  
+              <div class="pt-0 mb-3 d-flex justify-content-between">
+                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-info btn-lg btn-block" type="button"><a href="./memberpg.html">Login</a></button>
+                <p class="small mb-3 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
+              </div>
+  
+              
+              <p class="text-center">Don't have an account? <a href="./registration9ja.html" class="link-info">Register here</a></p>
+
+                   <!-- Or Separator -->
+
+              <div class="modal-body text-center">
+                <div class="my-3 horizontal-line">or</div>
+    
+                  <!-- Social Media Sign Up -->
+
+                  <div class="signins">
+                    <button class="btn col-9 btn-outline-danger signin"><span><img src="./img/googleicon.jpeg" width="15rem" style="margin-right: 2rem; margin-bottom: 3px;"></span> Continue with Google</button> <br>
+                    <button class="btn btn col-9 btn-outline-primary signin"><span><img src="./img/facebookicon.jpeg" width="15rem" style="margin-right: 2rem; margin-bottom: 3px;"></span>Continue with Facebook</button>
+                  </div>
+           
+          <hr>
+                  <p class="mt-2" style="font-size: 14px;">
+                    <a href="./login9jacoy.html" style="text-decoration: none;">Log in with your organization</a>
+                  </p>
+                    <hr>
+  
+                    <!-- Terms and Privacy Notice -->
+                  <label style="font-size: 11px;">
+                    <p>Having trouble logging in? 
+                      <a href="#" style="color: #000;">Learner help center</a>
+                    </p>
+                  </label>
+                    <p class="modal-body text-center w-55" style="font-size: 11px;">
+                      This site is protected by reCAPTCHA Enterprise and the Google 
+                      <a href="" style="color: #000;">Privacy Policy</a> and 
+                      <a href="" style="color: #000;">Terms of Service</a> apply.
+                    </p>
+                </div>
+  
+            </form>
+  
+          </div>
+  
+        </div>
+        
+        <div class="col-sm-6 px-0 d-none d-sm-block">
+          <img src="./assets/about/desktop/vehicles9ja2.jpeg"
+            alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

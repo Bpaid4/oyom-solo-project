@@ -1,0 +1,172 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background-color: blue;
+    transition: width 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin-top: 60px; /* Adjust for header */
+}
+
+.sidebar ul li {
+    margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+    color: red;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a span {
+    margin-left: 1rem;
+    white-space: nowrap;
+    display: none;
+}
+
+.sidebar:hover ul li a span {
+    display: inline;
+}
+
+/* Main Content Styling */
+main {
+    margin-left: 60px; /* Sidebar width */
+    max-width: 800px;
+    padding: 2rem 1rem;
+}
+
+.profile-section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section .profile-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.activities-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.activities-section h2 {
+    margin-bottom: 1rem;
+}
+
+.activities-section .activity {
+    margin-bottom: 1rem;
+}
+
+.activities-section .activity h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.activities-section .activity p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        padding: 0 0.5rem;
+    }
+
+    .sidebar {
+        width: 60px;
+        left: 0;
+    }
+
+    .sidebar:hover {
+        width: 200px;
+    }
+}
